@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+img{
+    width:100%;
+    object-fit:cover;
+}
+h1 {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 128px;
+    text-transform: uppercase;
+    padding-top:50px;
+    padding-left:20px;
+    top:50px;
+    margin:0;
+    color:#1b1b1b;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    padding:0px 25px;
+    color:#1b1b1b;
+}
+
+h3{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding:0px 30px;
+    margin:0;
+    color:#1b1b1b;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.worksgrid1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:0px;
+    row-gap:0px;
+    padding:0px;
+    margin:0% 20% 15%;
+}
+
+.worksgrid2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:0px;
+    row-gap:0px;
+    padding:0px;
+    margin:0% 15% 15%;
+}
+
+.worksgrid3{
+    display:grid;
+    grid-template-columns: 1fr;
+    column-gap:0px;
+    row-gap:0px;
+    padding:0px;
+    margin:0% 30% 15%;
+}
+
+.workslink{
+    object-fit: contain;
+    width:100%;
+}
+
+.workslink:hover{
+    opacity: 60%;
+}
+
+.container{
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+.overlay{
+    position:absolute;
+    top: 50%;
+    color: rgb(240, 240, 240);
+    background-color: #1b1b1b;
+    width: 100%;
+    padding:15px 0px;
+    font-weight: bold;
+    transition:all.1s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.container:hover .overlay{
+    opacity:1;
+}
+
+#navbar1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    color: rgb(240, 240, 240);
+
+}
+
+.logo {
+    float: left;
+    position: relative;
+    left:15px;
+    top:2px;
+    width: 100px;
+    cursor:pointer;
+}
+
+.logo:hover {
+    opacity: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 20px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+a:hover {
+    color: #cbcbcb;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1b1b1b;
+    color: rgb(240, 240, 240);
+    padding: 0;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropbtn:hover {
+    color: #cbcbcb;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #1b1b1b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #cbcbcb;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn{
+    background-color: #1b1b1b;
+}
+
+.paper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    padding: 50px;
+}
+
+.contact{
+    grid-column-start: 2;
+    grid-column-end:3;
+    text-align: right;
+    padding:50px 0px;
+    margin:0;
+}
+
+.contactinfo{
+    grid-column-start:3;
+    grid-column-end:4;
+    padding:50px 0px;
+    margin:0;
+}
+
+.bio{
+    grid-column-start: 1;
+    grid-column-end:3;
+    padding:50px 0px;
+    margin:0;
+}
